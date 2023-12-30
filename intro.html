@@ -212,7 +212,7 @@
                         <div class="title">
                             <h1>&#129505Gửi bé !</h1>
                         </div>
-                        <p>Năm mới,chị chúc em nhiều sức khỏe thôi.
+                        <p>Năm mới,chị chúc em nhiều sức khỏe.
                         Lun vui vẻ hạnh phúc,học hành thuận lợi lun
                         được học bổng cao. Công việc ở ban chấp hành 
                         lun thuận lợi, lun được mọi người iu quý tin tưởng
@@ -228,11 +228,17 @@
             <i class="fa-solid fa-xmark"></i>
         </div>
     </div>
+<audio id="song" autoplay>
+    <source src="image/nhac.mp3" type="audio/mp3">
+</audio>
 
-    <audio id="song"autoplay>
-        <source src="image/nhac.mp3" type="audio/mp3">
-    </audio>
-
+<script>
+    var audio = document.getElementById("song");
+    audio.addEventListener("canplay", function() {
+        audio.playbackRate = 1.25; // Chỉnh tốc độ lên 1.5 khi đã sẵn sàng phát
+        audio.play(); // Phát lại nhạc sau khi đã thiết lập tốc độ
+    });
+</script>
 <script src="intro.js"></script>
 </body>
 </html>
