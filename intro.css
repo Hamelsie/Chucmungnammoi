@@ -1136,8 +1136,9 @@ body{
     filter: drop-shadow(0 0 25px rgb(255, 255, 0));
 }
 .cat img{
-    width: 170px;
-    margin-top: -5rem;
+    width: 190px;
+    margin-top: -5rem
+    outline: none;
 }
 .box-rim{
     position: absolute;
