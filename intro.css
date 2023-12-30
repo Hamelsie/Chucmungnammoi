@@ -1138,7 +1138,8 @@ body{
 .cat img{
     width: 190px;
     margin-top: -5rem
-    outline: none;
+    background-color: transparent;
+   
 }
 .box-rim{
     position: absolute;
