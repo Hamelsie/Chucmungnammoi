@@ -1,14 +1,11 @@
-/* CSS chung cho tất cả các thiết bị */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
     background-image: url('image/background1.jpg');
     background-repeat: no-repeat;
@@ -20,11 +17,9 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 .wrapper{
     position: relative;
-    width: 80%; /* Sử dụng đơn vị linh hoạt */
-    max-width: 800px; /* Giới hạn chiều rộng tối đa */
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -32,22 +27,19 @@ body{
     flex-direction: column;
     line-height: 80px;
 }
-
 .wrapper h1{
     font-size: 40px;
     font-family: 'Lobster', cursive;
     letter-spacing: 1px;
     color: #fff;
 }
-
 .wrapper .box-time{
     position: relative;
     display: flex;
     line-height: normal;
-    width: 100%;
+    width: 530px;
     justify-content: space-between;
 }
-
 .box-time .time{
     position: relative;
     width: 120px;
@@ -58,9 +50,9 @@ body{
     flex-direction: column;
     background-color: rgb(216, 48, 48);
     border-radius: 50%;
-    box-shadow: 0 0 20px #fff, 0 0 40px #fff;
+    box-shadow: 0 0 20px #fff,
+            0 0 40px #fff;
 }
-
 .box-time .time::before{
     position: absolute;
     content: '';
@@ -70,35 +62,12 @@ body{
     box-shadow: inset 0 0 10px #333;
     border-radius: 50%;
 }
-
 .box-time .time p{
     font-size: 35px;
     font-family: 'Caramel', cursive;
 }
-
 .box-time .time span{
     padding: 10px 0px;
     font-size: 25px;
     font-family: 'Fredoka One', cursive;
-}
-
-/* Media Queries cho các thiết bị khác nhau */
-
-/* Đối với màn hình nhỏ như điện thoại */
-@media (max-width: 576px) {
-    .wrapper h1 {
-        font-size: 30px;
-    }
-    
-    /* Các thiết lập CSS khác cho thiết bị nhỏ */
-}
-
-/* Đối với màn hình trung bình như máy tính bảng */
-@media (min-width: 577px) and (max-width: 992px) {
-    /* Các thiết lập CSS khác cho máy tính bảng */
-}
-
-/* Đối với màn hình lớn như máy tính */
-@media (min-width: 993px) {
-    /* Các thiết lập CSS khác cho máy tính */
 }
